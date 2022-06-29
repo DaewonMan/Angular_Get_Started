@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
-  tabList: Array<any> = [
-    "tab1",
-    "tab2",
-    "tab3",
-    "tab4"
+  tabList: Array<string> = [
+    'tab1',
+    'tab2',
+    'tab3',
+    'tab4'
   ];
 
   constructor() {}
