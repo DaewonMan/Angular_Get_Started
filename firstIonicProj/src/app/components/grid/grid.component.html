@@ -1,0 +1,151 @@
+<ion-content style="background-color: brown;" class="ion-padding">
+  <h1>Grid With Fixed Width Based on Screen Size</h1>
+  <h4>Resize viewport to see it in action</h4>
+  <ion-grid [fixed]="true">
+    <ion-row class="tGrid">
+      <ion-col> 1 of 3 </ion-col>
+      <ion-col> 2 of 3 </ion-col>
+      <ion-col> 3 of 3 </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col> 1 of 6 </ion-col>
+      <ion-col> 2 of 6 </ion-col>
+      <ion-col> 3 of 6 </ion-col>
+      <ion-col> 4 of 6 </ion-col>
+      <ion-col> 5 of 6 </ion-col>
+      <ion-col> 6 of 6 </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col> 1 of 12 </ion-col>
+      <ion-col> 2 of 12 </ion-col>
+      <ion-col> 3 of 12 </ion-col>
+      <ion-col> 4 of 12 </ion-col>
+      <ion-col> 5 of 12 </ion-col>
+      <ion-col> 6 of 12 </ion-col>
+      <ion-col> 7 of 12 </ion-col>
+      <ion-col> 8 of 12 </ion-col>
+      <ion-col> 9 of 12 </ion-col>
+      <ion-col> 10 of 12 </ion-col>
+      <ion-col> 11 of 12 </ion-col>
+      <ion-col> 12 of 12 </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="9" push="3">
+        <div>1 of 2</div>
+      </ion-col>
+      <ion-col size="3" pull="9">
+        <div>2 of 2</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row class="ion-align-items-start">
+      <ion-col>
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4 # # #</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4 # # #</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-end">
+      <ion-col>
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4 # # #</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-align-self-start">
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col class="ion-align-self-center">
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col class="ion-align-self-end">
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4 # # #</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3">
+        <div>1 of 2</div>
+      </ion-col>
+      <ion-col size="3" offset="3">
+        <div>2 of 2</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>1 of 3</div>
+      </ion-col>
+      <ion-col size="auto">
+        <div>Variable width content2123123132123123</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 3</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col size="auto">
+        <div>
+          <ion-input placeholder="Variable width input"></ion-input>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

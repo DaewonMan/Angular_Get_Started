@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab4Page implements OnInit {
 
+  test1 = {
+    a: 1
+  };
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  aaa() {
+    debugger
+    console.log('xxxx');
+    return this.test1;
   }
 
 }
