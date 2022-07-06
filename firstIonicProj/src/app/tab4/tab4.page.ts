@@ -17,7 +17,6 @@ export class Tab4Page implements OnInit {
   }
 
   aaa() {
-    debugger
     console.log('xxxx');
     return this.test1;
   }

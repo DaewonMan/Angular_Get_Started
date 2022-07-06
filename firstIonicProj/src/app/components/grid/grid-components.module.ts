@@ -4,20 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { GridomponentsModule } from './grid/grid-components.module';
-
-import { GridComponent } from './grid/grid.component';
+import { GridSubComponent } from './components/grid-sub/grid-sub.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GridomponentsModule
   ],
   exports: [
-    GridComponent
+    GridSubComponent
   ],
-  declarations: [GridComponent]
+  declarations: [GridSubComponent]
 })
-export class ComponentsModule {}
+export class GridomponentsModule {}
