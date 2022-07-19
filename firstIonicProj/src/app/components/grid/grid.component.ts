@@ -8,6 +8,7 @@ import { GridServiceService } from './grid-service.service';
 export class GridComponent implements OnInit, OnChanges {
 
   @Input() test;
+  @Input() settingInfo?: any;
 
   count: number = 0;
 
@@ -35,6 +36,28 @@ export class GridComponent implements OnInit, OnChanges {
       regDate: 'date123',
       categoryName: 'f111121312313213'
     });
+  }
+
+  deleteEventTest() {
+    debugger;
+    this.settingInfo?.changeProcess?.delete();
+  }
+
+  testScan() {
+    this.gridService.testScan();
+  }
+
+  focusOutTest() {
+    debugger
+    let a = document.querySelectorAll('#input_test')[0];
+    let b = document.querySelectorAll('ion-input')[1];
+    // setTimeout(()=> a.focus(), 1000)
+    let c = document.getElementById('input_test');
+    // b.focus();
+    // c.focus();
+    // c.click();
+    // a.click();
+    b.click();
   }
 
 }

@@ -7,17 +7,24 @@ import { IonicModule } from '@ionic/angular';
 import { GridomponentsModule } from './grid/grid-components.module';
 
 import { GridComponent } from './grid/grid.component';
+import { AppImageHandlerComponent } from './app-image-handler/app-image-handler.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    GridomponentsModule
+    GridomponentsModule,
+    HttpClientModule
   ],
   exports: [
-    GridComponent
+    GridComponent,
+    AppImageHandlerComponent
   ],
-  declarations: [GridComponent]
+  declarations: [
+    GridComponent,
+    AppImageHandlerComponent
+  ]
 })
 export class ComponentsModule {}

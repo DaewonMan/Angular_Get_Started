@@ -1,0 +1,6 @@
+<input type="file" accept=".jpg,.png" class="button" (change)="uploadImage($event.target?.files)" />
+<p>Upload Percent: {{percentDone}}% </p> <br />
+
+<ng-container *ngIf="uploadSuccess" class="success">
+  <p class="sucess">Upload Successful</p>
+</ng-container>
