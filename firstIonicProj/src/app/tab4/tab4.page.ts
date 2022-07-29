@@ -17,6 +17,10 @@ interface ISettingInfo {
 })
 export class Tab4Page implements OnInit {
 
+  timeoutItcs = {
+    buttonTestId: undefined
+  };
+
   test1 = {
     a: 1
   };
@@ -34,9 +38,22 @@ export class Tab4Page implements OnInit {
   ngOnInit() {
   }
 
+  ngOnDestroy() {
+    clearTimeout(this.timeoutItcs.buttonTestId);
+  }
+
   aaa() {
     console.log('xxxx');
     return this.test1;
+  }
+
+  clickTest() {
+    clearTimeout(this.timeoutItcs.buttonTestId);
+
+    this.timeoutItcs.buttonTestId = setTimeout(() => {
+      console.log(121212);
+    }, 0);
+
   }
 
 }
