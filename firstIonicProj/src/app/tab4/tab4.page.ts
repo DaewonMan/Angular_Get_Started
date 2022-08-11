@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PdfDownloadService } from '../pdf-download.service';
 
 interface IChangeProcess {
   delete?(localGridList: Array<object>): void;
@@ -33,7 +34,9 @@ export class Tab4Page implements OnInit {
     }
   };
 
-  constructor() { }
+  constructor(
+    private pdfDownloadSvc: PdfDownloadService
+  ) { }
 
   ngOnInit() {
   }
@@ -54,6 +57,10 @@ export class Tab4Page implements OnInit {
       console.log(121212);
     }, 0);
 
+  }
+
+  testPdf() {
+    this.pdfDownloadSvc.testPdf2('testApp');
   }
 
 }

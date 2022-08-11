@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content id="tab3App" [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
@@ -15,4 +15,7 @@
 
   <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
   <app-grid></app-grid>
+  <ion-button (click)="testPdf()">
+    <ion-label>Pdf download</ion-label>
+  </ion-button>
 </ion-content>
