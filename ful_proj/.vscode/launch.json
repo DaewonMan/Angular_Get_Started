@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TestProjApplication<testProj>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.dwm.testProj.TestProjApplication",
+            "projectName": "testProj",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
