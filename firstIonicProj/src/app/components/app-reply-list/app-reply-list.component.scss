@@ -1,0 +1,25 @@
+.comment-main {
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #999;
+    .commt-div {
+        p {
+            margin: 0 0.5rem 0.7rem 0;
+        }
+        .comment-title {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .commt-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+    .sub-comment-div {
+        padding-left: 1rem;
+        background-color: #fff555;
+        border-bottom: 1px solid #999;
+    }
+}

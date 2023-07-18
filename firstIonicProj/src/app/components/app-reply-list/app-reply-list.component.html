@@ -1,0 +1,65 @@
+<div>
+  <div>
+    <ion-input
+     [(ngModel)]="inputText"
+     (keyup.enter)="addCommentList($event)"
+    ></ion-input>
+  </div>
+  <div 
+    class="comment-main"
+    *ngFor="let commentItem of commentList; let commentIdx = index;"
+  >
+    <div class="commt-div">
+      <div class="comment-title">
+        <p>{{commentItem.companyNm}}</p>
+        <p>{{commentItem.usrNm}}</p>
+      </div>
+      <p>{{commentItem.comment}}</p>
+      <div class="commt-bottom">
+        <p>5분전</p>
+        <p>
+          <ion-icon 
+            [name]="commentItem.likedPeople.includes('test') ? 'thumbs-up' : 'thumbs-up-outline'"
+            (click)="setLikedPeople(commentItem.likedPeople)"
+          ></ion-icon>
+          좋아요
+        </p>
+        <p>
+          <ion-icon 
+            name="chatbubble-outline"
+            (click)="commentItem.isSubInput = !commentItem.isSubInput"
+          ></ion-icon>
+          대댓글
+        </p>
+      </div>
+      <ion-input
+        *ngIf="commentItem?.isSubInput"
+        [(ngModel)]="subInputText"
+        (keyup.enter)="addSubCommentList(commentItem, $event)"
+      >
+      </ion-input>
+    </div>
+    <div 
+      class="sub-comment-div"
+      *ngFor="let subCommentItem of commentItem.subCommnet; let subCommentIdx = index;"
+    >
+      <div class="commt-div">
+        <div class="comment-title">
+          <p>{{subCommentItem.companyNm}}</p>
+          <p>{{subCommentItem.usrNm}}</p>
+        </div>
+        <p>{{subCommentItem.comment}}</p>
+        <div class="commt-bottom">
+          <p>5분전</p>
+          <p>
+            <ion-icon name="thumbs-up-outline"
+              [name]="subCommentItem.likedPeople.includes('test') ? 'thumbs-up' : 'thumbs-up-outline'"
+              (click)="setLikedPeople(subCommentItem.likedPeople)"
+            ></ion-icon>
+            좋아요
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
