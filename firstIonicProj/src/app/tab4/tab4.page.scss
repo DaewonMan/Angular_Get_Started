@@ -10,3 +10,25 @@ ion-col {
     border-color: black;
     border-top: 1px;
 }
+
+.not-allow {
+    cursor: not-allowed !important;
+}
+.not-allow .native-input,
+.not-allow .native-textarea,
+.not-allow label
+{
+    cursor: not-allowed !important;
+}
+
+// .img-viewer {
+//     position: absolute;
+//     z-index: 10;
+//     width: 100%;
+//     height: 100%;
+// }
+
+ngx-image-viewer {
+    min-height: 400px;
+    width: 100%;
+}

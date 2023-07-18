@@ -8,6 +8,7 @@ import { Tab4PageRoutingModule } from './tab4-routing.module';
 
 import { Tab4Page } from './tab4.page';
 import { ComponentsModule } from '../components/components.module';
+import { ImageViewerModule } from "ngx-image-viewer";
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ComponentsModule } from '../components/components.module';
     FormsModule,
     IonicModule,
     Tab4PageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    ImageViewerModule.forRoot()
   ],
   declarations: [Tab4Page]
 })

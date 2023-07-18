@@ -4,13 +4,13 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
+    "ionic_start": "ionic serve",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "ionic_start": "ionic serve"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -26,8 +26,10 @@
     "@capacitor/keyboard": "1.2.2",
     "@capacitor/status-bar": "1.0.8",
     "@ionic/angular": "^6.1.9",
+    "font-awesome": "^4.7.0",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
+    "ngx-image-viewer": "^1.0.13",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

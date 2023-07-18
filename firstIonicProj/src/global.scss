@@ -24,3 +24,14 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.not-allow {
+    cursor: not-allowed !important;
+}
+.not-allow .native-input,
+.not-allow .native-textarea,
+.not-allow label
+{
+    cursor: not-allowed !important;
+}

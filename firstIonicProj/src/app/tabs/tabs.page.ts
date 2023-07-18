@@ -16,7 +16,7 @@ export class TabsPage {
   constructor() {}
 
   a() {
-    window.alert('dfsdf');
+    // window.alert('dfsdf');
   }
 
 }

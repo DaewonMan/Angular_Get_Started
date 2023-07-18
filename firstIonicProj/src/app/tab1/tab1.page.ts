@@ -9,4 +9,8 @@ export class Tab1Page {
 
   constructor() {}
 
+  mainTo() {
+    // window.location.href = "mailto:xyz@something.com";
+    window.location.href = "sms:01089258382?body='test123'";
+  }
 }

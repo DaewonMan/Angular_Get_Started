@@ -9,6 +9,7 @@ import { GridomponentsModule } from './grid/grid-components.module';
 import { GridComponent } from './grid/grid.component';
 import { AppImageHandlerComponent } from './app-image-handler/app-image-handler.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AppReplyListComponent } from './app-reply-list/app-reply-list.component';
 
 @NgModule({
   imports: [
@@ -20,11 +21,13 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   exports: [
     GridComponent,
-    AppImageHandlerComponent
+    AppImageHandlerComponent,
+    AppReplyListComponent
   ],
   declarations: [
     GridComponent,
-    AppImageHandlerComponent
+    AppImageHandlerComponent,
+    AppReplyListComponent
   ]
 })
 export class ComponentsModule {}

@@ -11,7 +11,7 @@
     <ion-button (click)="clickTest()"></ion-button>
     <ion-button (click)="testPdf()">PDF다운</ion-button>
 
-    <iframe 
+    <!-- <iframe 
       width="560" 
       height="315" 
       src="https://www.youtube.com/embed/KfgPvq5VEdg" 
@@ -20,8 +20,36 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen
     >
-    </iframe>
+    </iframe> -->
 
-
+    <ion-input class="not-allow" style="width: 50px; height: 30px; border: 1px solid black" readonly="true">
+      fsd
+    </ion-input>
+    <!-- <ion-item> -->
+      <ion-select class="not-allow" placeholder="Select fruit" value="apples" [interface]="'popover'" style="cursor: not-allowed !important">
+        <ion-select-option value="apples">Apples</ion-select-option>
+        <ion-select-option value="oranges">Oranges</ion-select-option>
+        <ion-select-option value="bananas">Bananas</ion-select-option>
+      </ion-select>
+    <!-- </ion-item> -->
+    <i 
+      class="fa-solid fa-user"
+      (click)="isImageView=!isImageView"
+    >
+      오픈
+    </i>
+    <!-- <div 
+      *ngIf="isImageView"
+      style="width: 100%; display: flex"
+    > -->
+      <ngx-image-viewer 
+        *ngIf="isImageView"
+        [src]="images" 
+        [(index)]="imageIndex"
+        [config]="imgConfig"
+      >
+      </ngx-image-viewer>
+    <!-- </div> -->
+    <app-reply-list></app-reply-list>
   </ion-content>
 </ion-app>
