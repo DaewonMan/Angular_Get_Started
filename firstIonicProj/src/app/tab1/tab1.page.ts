@@ -11,6 +11,6 @@ export class Tab1Page {
 
   mainTo() {
     // window.location.href = "mailto:xyz@something.com";
-    window.location.href = "sms:01089258382?body='test123'";
+    window.location.href = "sms:010****1234?body='test123'";
   }
 }
